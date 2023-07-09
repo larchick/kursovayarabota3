@@ -10,11 +10,13 @@ import java.util.Collection;
 @RequestMapping("/exam")
 public class ExamController {
 
+    private final ExaminerService examinerService;
+
     public ExamController(ExaminerService examinerService){
         this.examinerService = examinerService;
     }
     @GetMapping("/get/{amount}")
     public Collection<Question> getQuestion(@PathVariable int amount){
-        return examinerServise.getQuestions(amount);
+        return examinerService.getQuestions(amount);
     }
 }

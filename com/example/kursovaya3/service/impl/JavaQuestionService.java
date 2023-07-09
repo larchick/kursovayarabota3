@@ -2,9 +2,9 @@ package com.example.kursovaya3.service.impl;
 
 import com.example.kursovaya3.model.Question;
 import com.example.kursovaya3.service.QuestionService;
-import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.*;
 @Service
 public class JavaQuestionService implements QuestionService {
